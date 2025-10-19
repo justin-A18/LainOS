@@ -27,7 +27,7 @@ export const MobileMenu = ({
 				className='block md:hidden cursor-pointer'
 				aria-label='open mobile menu'
 				onClick={onOpenMobileMenu}>
-				<MenuIcon className='size-8 transition-colors duration-300' />
+				<MenuIcon className='size-8 transition-colors duration-300' />{' '}
 			</button>
 
 			<div
@@ -52,15 +52,11 @@ export const MobileMenu = ({
 
 				<ul className='flex flex-col gap-2'>
 					{NAV_ITEMS.map((item, index) => (
-						<li
-							key={item.label}
-							role='none'>
+						<li key={item.label}>
 							{item.children ? (
 								<>
 									<button
 										className='text-left w-full py-2 px-2 rounded inline-flex gap-2 items-center hover:bg-pink-200/30 transition-colors duration-300'
-										aria-haspopup='true'
-										aria-expanded={openIndex === index}
 										onClick={() => toggleItem(index)}>
 										<ArrowRightIcon
 											className={`${
@@ -72,15 +68,11 @@ export const MobileMenu = ({
 									<ul
 										className={`overflow-hidden transition-all duration-500 ${
 											openIndex === index ? 'max-h-60' : 'max-h-0'
-										} flex flex-col ml-4`}
-										role='menu'>
+										} flex flex-col ml-4`}>
 										{item.children.map((child) => (
-											<li
-												key={child.label}
-												role='none'>
+											<li key={child.label}>
 												<a
 													href={child.href}
-													role='menuitem'
 													className='py-1 px-2 rounded inline-flex items-center gap-2 hover:bg-pink-200/30 transition-colors duration-300'>
 													<span className='text-[0.50rem] text-pink-200'>
 														●
@@ -94,7 +86,6 @@ export const MobileMenu = ({
 							) : (
 								<a
 									href={item.href}
-									role='menuitem'
 									className='py-2 px-2 rounded block hover:bg-pink-200/30 transition-colors duration-300'>
 									{item.label}
 								</a>
