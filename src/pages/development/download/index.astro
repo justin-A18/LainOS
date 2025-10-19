@@ -1,0 +1,47 @@
+---
+import Terminal from '../../../modules/development/modules/download/components/Terminal/Terminal.astro';
+import Layout from '../../../modules/global/components/layouts/Layout.astro';
+---
+
+<Layout
+	title='Lain OS | Download'
+	description='Download LainOS, the community-driven Linux distribution inspired by Serial Experiments Lain. Get the ISO, follow installation instructions, and join a vibrant developer and hacker community.'>
+	<main class='py-10 px-4 max-w-4xl mx-auto'>
+		<section class='py-16 flex flex-col items-center text-center gap-4'>
+			<h1
+				class='text-4xl md:text-5xl lg:text-6xl font-extrabold ont-extrabold tracking-tight bg-gradient-to-r from-gray-300 via-pink-200 to-zinc-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(100,100,100,0.3)] hover:drop-shadow-[0_0_20px_rgba(150,100,150,0.5)] transition-all duration-500'>
+				Download LainOS
+			</h1>
+
+			<p
+				class='text-zinc-400 text-sm md:text-lg lg:text-xl text-center font-mono leading-relaxed'>
+				Get the latest release of LainOS from our official GitHub repository:
+			</p>
+
+			<a
+				href='https://github.com/The-LainOS-Project/LainOS/releases'
+				target='_blank'
+				rel='noopener noreferrer'
+				class='mt-4 px-6 py-3 bg-gradient-to-r from-pink-200 via-gray-300 to-zinc-500 text-zinc-900 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300'>
+				View Releases
+			</a>
+		</section>
+
+		<section class='py-5 flex flex-col items-center'>
+			<h2
+				class='text-3xl md:text-4xl font-extrabold tracking-tight
+				bg-gradient-to-r from-gray-300 via-pink-200 to-zinc-500
+				bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(100,100,100,0.3)] hover:drop-shadow-[0_0_20px_rgba(150,100,150,0.5)] transition-all duration-500'>
+				&gt; Installation Guide
+			</h2>
+
+			<div class='space-y-6'>
+				<Terminal />
+
+				<p class='text-zinc-400 text-sm md:text-base text-center font-mono'>
+					Thank you! — The LainOS Team
+				</p>
+			</div>
+		</section>
+	</main>
+</Layout>

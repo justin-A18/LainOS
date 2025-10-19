@@ -1,0 +1,46 @@
+---
+import { ROADMAP_LAINOS } from '../../../modules/development/modules/roadmap/constants/roadmap.const';
+import Layout from '../../../modules/global/components/layouts/Layout.astro';
+---
+
+<Layout
+	title='LainOS | Roadmap'
+	description='LainOS Roadmap: Explore upcoming features, updates, and milestones of the community-driven Linux distribution inspired by Serial Experiments Lain.'>
+	<main
+		class='flex flex-col items-center justify-center text-center py-10 px-4'>
+		<section class='space-y-8 max-w-2xl w-full'>
+			<h1
+				class='text-4xl md:text-5xl lg:text-6xl font-extrabold ont-extrabold tracking-tight bg-gradient-to-r from-gray-300 via-pink-200 to-zinc-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(100,100,100,0.3)] hover:drop-shadow-[0_0_20px_rgba(150,100,150,0.5)] transition-all duration-500'>
+				Roadmap
+			</h1>
+
+			<ol
+				class='relative space-y-8 before:absolute before:top-0
+		before:left-[5px] sm:before:left-1/2 before:h-full before:w-0.5 sm:before:-translate-x-1/2 before:rounded-full before:bg-zinc-800'>
+				{
+					ROADMAP_LAINOS.map((group) => (
+						<li class='group relative grid sm:grid-cols-2 sm:odd:-me-3 sm:even:-ms-3'>
+							<div class='relative flex items-start gap-4 sm:group-odd:flex-row-reverse text-left sm:group-odd:text-right sm:group-even:order-last'>
+								<span class='size-3 shrink-0 rounded-full bg-pink-100' />
+
+								<div class='-mt-2'>
+									<h3
+										class='text-lg font-bold 
+									bg-gradient-to-r from-zinc-300 to-zinc-300 
+									bg-clip-text text-transparent 
+									drop-shadow-[0_0_8px_rgba(0,0,0,0.4)]'>
+										{group.title}
+									</h3>
+
+									<p class='mt-0.5 text-sm text-zinc-400'>{group.content}</p>
+								</div>
+							</div>
+
+							<div aria-hidden='true' />
+						</li>
+					))
+				}
+			</ol>
+		</section>
+	</main>
+</Layout>

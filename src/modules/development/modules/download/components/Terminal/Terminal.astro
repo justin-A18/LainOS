@@ -1,0 +1,21 @@
+---
+const commands = [
+	'After booting the ISO, select Openbox Session (The LainOS Installer only works in Openbox).',
+	"Login as 'liveuser' with no password, then connect to the internet.",
+	'Post installation (future versions will automate this):',
+	'$ sudo pacman -Sy   # update package databases',
+	'$ sudo pacman -Syu  # update the system',
+	'$ chsh -s $(which zsh)  # activate custom shell (reboot required)',
+	'$ nano  # open LazyVim, then Shift+U to update',
+	'$ chmod 755 /home/USERNAME/.config/LazyVim/lua/plugins/script.sh',
+	'$ sudo systemctl start ufw',
+	'$ sudo systemctl enable ufw',
+];
+---
+
+<div class='w-full max-w-5xl mx-auto mt-12'>
+	<div
+		class='border border-zinc-800 rounded-xl shadow-lg p-6 text-zinc-300 font-mono text-sm md:text-base'>
+		<pre class='w-full whitespace-pre-wrap'>{commands.join('\n')}</pre>
+	</div>
+</div>
