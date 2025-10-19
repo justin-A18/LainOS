@@ -3,7 +3,7 @@ import { DiscordIcon } from '../Icons/DiscordIcon';
 import { GitHubIcon } from '../Icons/GithubIcon';
 import { NavSubItems } from './NavSubItems';
 
-export const NavItems = () => {
+export const NavItems = ({}) => {
 	return (
 		<div className='hidden md:flex flex-1'>
 			<ul
@@ -28,14 +28,14 @@ export const NavItems = () => {
 
 			<div className='flex items-center gap-4'>
 				<a
-					href=''
+					href='https://github.com/The-LainOS-Project'
 					aria-label='GitHub profile'
 					target='_blank'
 					rel='noopener noreferrer'>
 					<GitHubIcon className='size-6' />
 				</a>
 				<a
-					href=''
+					href='https://discord.com/invite/kEbwebmZuC'
 					aria-label='Discord community'
 					target='_blank'
 					rel='noopener noreferrer'>

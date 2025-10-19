@@ -1,10 +1,11 @@
-import { MenuIcon } from '../Icons/MenuIcon';
 import { NavItems } from './NavItems';
 import { Logo } from '../Logo/Logo';
-import { useNavbar } from './useNavbar';
+import { useNavbarMobile } from '../MovileMenu/useNavbarMobile';
+import { MobileMenu } from '../MovileMenu/MobileMenu';
 
 export const Navbar = () => {
-	const { isOpenMobileMenu, toggleMobileMenu, onCloseMobileMenu } = useNavbar();
+	const { isOpenMobileMenu, onOpenMobileMenu, onCloseMobileMenu } =
+		useNavbarMobile();
 
 	return (
 		<header className='w-full px-4 py-2'>
@@ -12,13 +13,14 @@ export const Navbar = () => {
 				className='flex items-center justify-between'
 				role='navigation'>
 				<Logo />
+
 				<NavItems />
 
-				<button
-					className='block md:hidden'
-					aria-label='open mobile menu'>
-					<MenuIcon className='size-8' />
-				</button>
+				<MobileMenu
+					isOpenMobileMenu={isOpenMobileMenu}
+					onCloseMobileMenu={onCloseMobileMenu}
+					onOpenMobileMenu={onOpenMobileMenu}
+				/>
 			</nav>
 		</header>
 	);

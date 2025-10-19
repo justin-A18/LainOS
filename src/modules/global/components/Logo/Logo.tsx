@@ -3,7 +3,9 @@ export const Logo = () => {
 		<a
 			href='/'
 			className='flex items-center gap-3 group cursor-pointer select-none'>
-			<div className='relative'>
+			<div
+				className='relative'
+				aria-label='LainOs Logo'>
 				<img
 					src='/the-wired.svg'
 					alt='The Wired Logo'

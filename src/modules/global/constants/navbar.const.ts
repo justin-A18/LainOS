@@ -4,15 +4,15 @@ export const NAV_ITEMS = [
 		href: '/',
 	},
 	{
+		label: 'News',
+		href: '/news',
+	},
+	{
 		label: 'About',
 		children: [
 			{ label: 'Overview', href: '/overview' },
 			{ label: 'Core Features', href: '/features' },
 		],
-	},
-	{
-		label: 'News',
-		href: '/news',
 	},
 	{
 		label: 'Development',
