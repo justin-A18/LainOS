@@ -37,6 +37,9 @@ export const MobileMenu = ({
 				onClick={onCloseMobileMenu}></div>
 
 			<div
+				id='mobile-menu'
+				role='menu'
+				aria-label='Main mobile menu'
 				className={`fixed top-0 right-0 z-[9999] h-screen p-4 w-80 sm:w-96 bg-gradient-to-b from-zinc-900 via-zinc-800 to-zinc-900 text-zinc-100 flex flex-col shadow-xl transition-transform duration-500 ${
 					isOpenMobileMenu ? 'translate-x-0' : 'translate-x-full'
 				}`}>
@@ -47,17 +50,17 @@ export const MobileMenu = ({
 					<CloseIcon className='size-6 text-pink-200' />
 				</button>
 
-				<ul
-					className='flex flex-col gap-2'
-					role='navigation-mobile-menu'>
+				<ul className='flex flex-col gap-2'>
 					{NAV_ITEMS.map((item, index) => (
 						<li
 							key={item.label}
-							className='flex flex-col'>
+							role='none'>
 							{item.children ? (
 								<>
 									<button
 										className='text-left w-full py-2 px-2 rounded inline-flex gap-2 items-center hover:bg-pink-200/30 transition-colors duration-300'
+										aria-haspopup='true'
+										aria-expanded={openIndex === index}
 										onClick={() => toggleItem(index)}>
 										<ArrowRightIcon
 											className={`${
@@ -69,11 +72,15 @@ export const MobileMenu = ({
 									<ul
 										className={`overflow-hidden transition-all duration-500 ${
 											openIndex === index ? 'max-h-60' : 'max-h-0'
-										} flex flex-col ml-4`}>
+										} flex flex-col ml-4`}
+										role='menu'>
 										{item.children.map((child) => (
-											<li key={child.label}>
+											<li
+												key={child.label}
+												role='none'>
 												<a
 													href={child.href}
+													role='menuitem'
 													className='py-1 px-2 rounded inline-flex items-center gap-2 hover:bg-pink-200/30 transition-colors duration-300'>
 													<span className='text-[0.50rem] text-pink-200'>
 														●
@@ -87,6 +94,7 @@ export const MobileMenu = ({
 							) : (
 								<a
 									href={item.href}
+									role='menuitem'
 									className='py-2 px-2 rounded block hover:bg-pink-200/30 transition-colors duration-300'>
 									{item.label}
 								</a>
