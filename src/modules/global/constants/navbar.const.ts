@@ -4,14 +4,10 @@ export const NAV_ITEMS = [
 		href: '/',
 	},
 	{
-		label: 'News',
-		href: '/news',
-	},
-	{
 		label: 'About',
 		children: [
-			{ label: 'Overview', href: '/overview' },
-			{ label: 'Core Features', href: '/features' },
+			{ label: 'Overview', href: '/about/overview' },
+			{ label: 'Core Features', href: '/about/features' },
 		],
 	},
 	{
@@ -24,8 +20,8 @@ export const NAV_ITEMS = [
 	{
 		label: 'Community',
 		children: [
-			{ label: 'Get Involved', href: '/get-involved' },
-			{ label: 'Security & PGP Keys', href: '/security&pgp' },
+			{ label: 'Get Involved', href: '/community/get-involved' },
+			{ label: 'Security & PGP Keys', href: '/community/security&pgp' },
 		],
 	},
 ];

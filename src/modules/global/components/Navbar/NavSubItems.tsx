@@ -12,7 +12,7 @@ export const NavSubItems = ({ label, children }: NavSubItemsProps) => {
 			<summary className='cursor-pointer transition-all duration-500'>
 				{label}
 			</summary>
-			<div className='absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-4 group-hover:translate-y-0 top-10 transition-all duration-300 bg-black/90 border border-white/10 rounded-md p-2 z-10 w-fit flex flex-col'>
+			<div className='absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-4 group-hover:translate-y-0 top-10 transition-all duration-300 bg-black/90 border border-white/10 rounded-md p-2 w-fit flex flex-col z-[99]'>
 				{children.map(({ label, href }) => (
 					<a
 						href={href}

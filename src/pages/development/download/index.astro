@@ -1,6 +1,7 @@
 ---
-import Terminal from '../../../modules/development/modules/download/components/Terminal/Terminal.astro';
+import { GUIDE_COMMANDS } from '../../../modules/development/constants/dowload.const';
 import Layout from '../../../modules/global/components/layouts/Layout.astro';
+import Terminal from '../../../modules/global/components/Terminal/Terminal.astro';
 ---
 
 <Layout
@@ -9,7 +10,7 @@ import Layout from '../../../modules/global/components/layouts/Layout.astro';
 	<main class='py-10 px-4 max-w-4xl mx-auto'>
 		<section class='py-16 flex flex-col items-center text-center gap-4'>
 			<h1
-				class='text-4xl md:text-5xl lg:text-6xl font-extrabold ont-extrabold tracking-tight bg-gradient-to-r from-gray-300 via-pink-200 to-zinc-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(100,100,100,0.3)] hover:drop-shadow-[0_0_20px_rgba(150,100,150,0.5)] transition-all duration-500'>
+				class='text-4xl md:text-5xl lg:text-6xl font-extrabold ont-extrabold tracking-tight bg-gradient-to-r from-[#C5A58E] via-[#BB667B] to-[#A03B5E] bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(100,100,100,0.3)] hover:drop-shadow-[0_0_20px_rgba(150,100,150,0.5)] transition-all duration-500'>
 				Download LainOS
 			</h1>
 
@@ -22,7 +23,7 @@ import Layout from '../../../modules/global/components/layouts/Layout.astro';
 				href='https://github.com/The-LainOS-Project/LainOS/releases'
 				target='_blank'
 				rel='noopener noreferrer'
-				class='mt-4 px-6 py-3 bg-gradient-to-r from-pink-200 via-gray-300 to-zinc-500 text-zinc-900 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300'>
+				class='mt-4 px-6 py-3 bg-gradient-to-r from-[#C5A58E] to-[#A03B5E] text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300'>
 				View Releases
 			</a>
 		</section>
@@ -30,24 +31,24 @@ import Layout from '../../../modules/global/components/layouts/Layout.astro';
 		<section class='py-5 flex flex-col items-center'>
 			<h2
 				class='text-3xl md:text-4xl font-extrabold tracking-tight
-				bg-gradient-to-r from-gray-300 via-pink-200 to-zinc-500
+				bg-gradient-to-r from-[#C5A58E] to-[#A03B5E]
 				bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(100,100,100,0.3)] hover:drop-shadow-[0_0_20px_rgba(150,100,150,0.5)] transition-all duration-500'>
 				&gt; Installation Guide
 			</h2>
 
 			<p
 				class='mt-4 px-4 py-3 text-sm md:text-base font-mono text-zinc-300 bg-gradient-to-r from-pink-200/10 via-zinc-700/50 to-zinc-800/30 border border-zinc-600/40 rounded-xl shadow-lg max-w-2xl text-center'>
-				<span class='font-semibold text-pink-200'>Note:</span>
+				<span class='font-semibold text-[#BB667B]'>Note:</span>
 				Use an <span class='text-gray-200 font-semibold'>Ethernet cord</span> for
 				a frictionless installation. Otherwise, connect via Wi-Fi in Openbox and
 				restart the installer by closing it, right-clicking the desktop, and selecting
-				<span class='text-pink-200 font-semibold'>
+				<span class='text-[#BB667B] font-semibold'>
 					'System &gt; Install System'
 				</span>.
 			</p>
 
 			<div class='space-y-6 w-full'>
-				<Terminal />
+				<Terminal commands={GUIDE_COMMANDS} />
 
 				<p class='text-zinc-200 text-sm md:text-base text-center font-mono'>
 					Thank you! — The LainOS Team

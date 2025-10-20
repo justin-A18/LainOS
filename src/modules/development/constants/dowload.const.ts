@@ -1,5 +1,4 @@
----
-const commands = [
+export const GUIDE_COMMANDS = [
 	'After booting the ISO, select Openbox Session (The LainOS Installer only works in Openbox).',
 	"If not using an ethernet cord, login as 'liveuser' with no password, then connect to the internet, and restart the LainOS installer.",
 	'Post installation (future versions will automate this):',
@@ -10,12 +9,3 @@ const commands = [
 	'$ sudo systemctl start ufw',
 	'$ sudo systemctl enable ufw',
 ];
----
-
-<div class='w-full max-w-5xl mx-auto mt-12'>
-	<div
-		class='border border-zinc-800 rounded-xl shadow-lg p-6 text-zinc-300 font-mono text-sm md:text-base'>
-		<pre
-			class='w-full overflow-x-auto whitespace-pre-wrap break-words font-mono text-sm md:text-base'>{commands.join('\n')}</pre>
-	</div>
-</div>

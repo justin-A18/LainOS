@@ -1,0 +1,136 @@
+---
+import Layout from '../../../modules/global/components/layouts/Layout.astro';
+---
+
+<Layout
+	title='LainOS | Features'
+	description='Features, preinstalled tools and privacy/security software included with LainOS'>
+	<main class='py-10 px-4 max-w-4xl mx-auto'>
+		<section class='flex flex-col items-center text-center gap-4'>
+			<h1
+				class='text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-[#C5A58E] via-[#BB667B] to-[#A03B5E] bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(100,100,100,0.3)] hover:drop-shadow-[0_0_20px_rgba(150,100,150,0.5)] transition-all duration-500'>
+				Features — Made with Love
+			</h1>
+
+			<p class='max-w-3xl leading-relaxed text-gray-300 text-lg'>
+				LainOS ships opinionated defaults for developers and tinkerers:
+				lightweight, secure, and ready-to-use. We prioritize clarity,
+				performance and privacy — while keeping the system flexible for power
+				users.
+			</p>
+
+			<div class='w-full grid grid-cols-1 md:grid-cols-2 gap-6 mt-6'>
+				<article
+					class='bg-black/30 border border-[#BB667B]/30 rounded-2xl p-6 text-left'>
+					<h2 class='text-xl font-semibold text-[#BB667B] mb-2'>Highlights</h2>
+					<ul class='text-gray-300 list-disc list-inside space-y-2'>
+						<li
+							>Encrypted, easy installations via a customized <b>Calamares</b> installer</li
+						>
+						<li>Snappy performance using <b>Hyprland</b> or <b>Openbox</b></li>
+						<li
+							><b>Ultra-based</b> on Arch Linux (rolling, modular, developer-oriented)</li
+						>
+						<li>Developer toolchain & popular languages preinstalled</li>
+						<li
+							>Customized shell prompt, git tooling and terminal utilities for
+							fast workflows</li
+						>
+						<li>Out-of-the-box AUR access and curated packages</li>
+					</ul>
+				</article>
+
+				<article
+					class='bg-black/30 border border-[#BB667B]/30 rounded-2xl p-6 text-left'>
+					<h2 class='text-xl font-semibold text-[#BB667B] mb-2'
+						>Developer Toolkit</h2
+					>
+					<p class='text-gray-300 mb-3'
+						>Essentials ready for immediate development:</p
+					>
+					<ul class='text-gray-300 grid grid-cols-2 gap-2'>
+						<li>obs-studio</li>
+						<li>clang</li>
+						<li>gcc</li>
+						<li>go</li>
+						<li>python</li>
+						<li>rust</li>
+						<li>clisp</li>
+						<li>code (VS Code)</li>
+						<li>neovim</li>
+						<li>lazyvim</li>
+						<li>tmux</li>
+					</ul>
+				</article>
+			</div>
+
+			<article
+				class='w-full bg-black/30 border border-[#BB667B]/30 rounded-2xl p-6 text-left mt-6'>
+				<h2 class='text-2xl font-semibold text-[#BB667B] mb-3'>Privacy</h2>
+				<p class='text-gray-300 mb-4'
+					>Tools and defaults focused on user privacy and secure workflows.</p
+				>
+				<ul class='text-gray-300 list-disc list-inside space-y-2'>
+					<li><b>Librewolf</b> — privacy-focused browser forked from Firefox</li
+					>
+					<li><b>wireguard-tools</b> — modern VPN tooling</li>
+					<li><b>gpa</b> — graphical PGP keyring manager</li>
+					<li><b>KeepassXC</b> — secure password manager</li>
+					<li><b>macchanger</b> — MAC address spoofing</li>
+					<li><b>kloak</b> — keyboard anonymization</li>
+					<li><b>ufw</b> — friendly firewall wrapper</li>
+					<li
+						><b>proxychains-ng</b>, <b>tor</b>, <b>I2P</b> — proxying and anonymity
+						stacks</li
+					>
+				</ul>
+			</article>
+
+			<article
+				class='w-full bg-black/30 border border-[#BB667B]/30 rounded-2xl p-6 text-left mt-6'>
+				<h2 class='text-2xl font-semibold text-[#BB667B] mb-3'
+					>Security / Pentest Tools (for research)</h2
+				>
+				<p class='text-gray-400 text-sm mb-3'
+					>Bundled for research and testing. Use responsibly and legally.</p
+				>
+				<ul class='text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-2'>
+					<li>bettercap</li>
+					<li>nmap</li>
+					<li>sqlmap</li>
+					<li>wireshark</li>
+					<li>kismet</li>
+					<li>wifite</li>
+					<li>metasploit</li>
+					<li>routersploit</li>
+					<li>hashcat</li>
+				</ul>
+			</article>
+
+			<article
+				class='w-full bg-black/20 border border-[#BB667B]/20 rounded-2xl p-6 text-left mt-6'>
+				<h2 class='text-2xl font-semibold text-[#BB667B] mb-3'>Extras & UX</h2>
+				<ul class='text-gray-300 list-disc list-inside space-y-2'>
+					<li
+						>Opinionated, sane defaults for a quick dev workstation (with
+						options to opt-out)</li
+					>
+					<li>Curated dotfiles and shell prompt for speed-focused dev loops</li>
+					<li>Code editor plugins and recommended configs (Neovim / VS Code)</li
+					>
+					<li>Calamares profiles with optional full-disk LUKS encryption</li>
+					<li class='italic text-sm text-gray-400'
+						>Sane Defaults (just kidding) — you control everything.</li
+					>
+				</ul>
+			</article>
+
+			<p class='text-gray-400 mt-8 italic text-sm'>
+				Need a trimmed ISO or custom package list for a specific workflow
+				(devbox, media, pentesting)? Reach out in the <span
+					class='text-[#BB667B]'>Matrix</span
+				> or open an issue on GitHub.
+			</p>
+		</section>
+	</main>
+</Layout>

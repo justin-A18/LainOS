@@ -1,0 +1,94 @@
+---
+import Layout from '../../../modules/global/components/layouts/Layout.astro';
+---
+
+<Layout
+	title='LainOS | Security / PGP'
+	description='Security and design philosophy of LainOS'>
+	<main class='py-10 px-4 max-w-4xl mx-auto'>
+		<section class='flex flex-col items-center text-center gap-4'>
+			<h1
+				class='text-4xl md:text-5xl lg:text-6xl font-extrabold ont-extrabold tracking-tight bg-gradient-to-r from-[#C5A58E] via-[#BB667B] to-[#A03B5E] bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(100,100,100,0.3)] hover:drop-shadow-[0_0_20px_rgba(150,100,150,0.5)] transition-all duration-500'>
+				Security and design philosophy of lainOS
+			</h1>
+
+			<div>
+				<h2 class='text-gray-300 block mb-4 font-bold'>
+					Security and design philosophy of LainOS
+				</h2>
+				<p class='max-w-3xl leading-relaxed text-gray-300 text-lg block mb-4'>
+					I know what you're probably thinking; "these guys are a f*cking joke!
+					Look how unprofessional they are! They have anime PFPs! They are
+					f*cking weebs!"
+				</p>
+				<p class='max-w-3xl leading-relaxed text-gray-300 text-lg block'>
+					While we do like to joke and be playful at LainOS, we will never skimp
+					on security. ‘amnesia’, our security architect (me), works as a
+					freelance security architect and infosec consultant. I have also made
+					contributions to the current QubesOS/Whonix version (Qubes OS 4.2.4),
+					which can be seen here:
+				</p>
+			</div>
+
+			<ul class='text-[#C5A58E] text-base md:text-lg font-medium space-y-2'>
+				<li>
+					My Qubes Contribution:
+					<a
+						href='https://forum.qubes-os.org/t/quick-start-guide-snowflake-proxy-in-qubes-whonix-tor-control-panel/28889'
+						target='_blank'
+						rel='noopener noreferrer'
+						class='underline hover:text-[#BB667B] transition-colors'
+						>Forum Link</a
+					>
+				</li>
+				<li>
+					My Whonix Contribution:
+					<a
+						href='https://forums.whonix.org/t/quick-start-guide-fix-snowflake-proxy-in-qubes-whonix-tor-control-panel/20377'
+						target='_blank'
+						rel='noopener noreferrer'
+						class='underline hover:text-[#BB667B] transition-colors'
+						>Forum Link</a
+					>
+				</li>
+			</ul>
+
+			<p class='max-w-3xl leading-relaxed text-gray-300 text-lg mt-6 space-y-2'>
+				Yes, that’s me discussing and providing security solutions for both
+				QubesOS and Whonix with their developers. I hope this gives you
+				confidence in the competence of security at LainOS.
+				<span class='text-[#BB667B] font-bold'
+					>DO NOT TREAT LAINOS AS A SECURITY DISTRIBUTION.</span
+				>
+				If you are serious about security, use QubesOS or BSD. The PGP key below
+				is amnesia’s key, used to sign ISOs and releases until the full team adopts
+				the LainOS Master signing key.
+			</p>
+
+			<div
+				class='bg-black/30 border border-[#BB667B]/40 rounded-2xl p-6 max-w-3xl text-left shadow-lg w-full'>
+				<h2 class='text-2xl font-semibold text-[#BB667B] mb-4'>
+					PGP Fingerprint
+				</h2>
+				<p class='font-mono text-gray-200 tracking-wider break-words'>
+					2B53ECEF5A47ACF19A080E46B2E5012D409A7AFB
+				</p>
+				<p class='mt-3 text-gray-400 text-sm space-y-2'>
+					~ amnesia@lainos.dev
+					<a
+						href='https://github.com/The-LainOS-Project/PGP'
+						target='_blank'
+						class='underline hover:text-[#C5A58E] block'
+						>GitHub PGP Repository</a
+					>
+				</p>
+			</div>
+
+			<p class='text-gray-400 mt-10 italic text-sm'>
+				Please verify the fingerprints from both sources. For extra
+				verification, you may ask moderators on Discord or Matrix.<br />
+				Stay hydrated. LALL &lt;3
+			</p>
+		</section>
+	</main>
+</Layout>

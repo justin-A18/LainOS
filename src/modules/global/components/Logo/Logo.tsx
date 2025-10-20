@@ -13,13 +13,11 @@ export const Logo = () => {
 					height={36}
 					className='transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110'
 				/>
-				<span className='absolute inset-0 blur-md opacity-30 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full group-hover:opacity-50 transition-opacity duration-300' />
 			</div>
 
 			<span
 				className='font-semibold text-xl tracking-tight 
-				bg-gradient-to-r from-gray-300 via-pink-200 to-zinc-500 
-				bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(120,120,150,0.3)] group-hover:drop-shadow-[0_0_20px_rgba(200,150,255,0.4)] 
+				 text-white drop-shadow-[0_0_12px_rgba(120,120,150,0.3)] group-hover:drop-shadow-[0_0_20px_rgba(200,150,255,0.4)] 
 				transition-all duration-300'>
 				Lain OS
 			</span>
